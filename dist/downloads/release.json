@@ -1,0 +1,29 @@
+{
+  "version": "0.18.0",
+  "platform": "Windows x64",
+  "source_sha256": "a2e5de792921f4939e039982d0fd55b72e8c3467cf7f897bd5f009419982e77d",
+  "files_sha256": {
+    "PLab.exe": "d34d36f3be1a6c49c56525ae86469b92e4f417ddf0b43cf00dd80c385c4b0562",
+    "PLab.pck": "82e3d3914668379088ba58cef59cb03ed79eb0b0be7e3d4d911d2ba3727e2738"
+  },
+  "filename": "PLab-0.18.0-Windows-x64.zip",
+  "size_bytes": 44176771,
+  "sha256": "cfcd33cc71100edbad09772bbe214fc9f571dbc945b5ff96a0978da7c918e791",
+  "parts": [
+    {
+      "url": "PLab-0.18.0.part1",
+      "size_bytes": 20971520,
+      "sha256": "6724316cfd65c0ba5298ac48240a9c0d9ecec8d18c0982ad9fa5b34a8264a340"
+    },
+    {
+      "url": "PLab-0.18.0.part2",
+      "size_bytes": 20971520,
+      "sha256": "90d8fca0b56f60a847bd11c6301623638789d737dc6e0af13fcce2b622856905"
+    },
+    {
+      "url": "PLab-0.18.0.part3",
+      "size_bytes": 2233731,
+      "sha256": "dc756dd756c5893b71d7588a58f6c856ef4b2b931132c8a871b6e0d0f9412f94"
+    }
+  ]
+}
