@@ -40,7 +40,8 @@ window.PLAB_PORTAL_FRAGMENT = `precision mediump float;
                 vec2 mouseOffset = (u_mouse - 0.5) * 0.05;
                 st += mouseOffset;
 
-                vec2 center = vec2(u_resolution.x / u_resolution.y < 0.8 ? -0.58 : -0.22, 0.48);
+                // Keep the arc below the viewport; only its upper edge peeks in.
+                vec2 center = vec2(0.5 * u_resolution.x / u_resolution.y, -0.51);
 
                 float d1 = sdArc(st, center, 0.600, 0.020, 0.15);
                 float d2 = sdArc(st, center, 0.650, 0.060, 0.2);
@@ -61,7 +62,8 @@ window.PLAB_PORTAL_FRAGMENT = `precision mediump float;
                     alpha = clamp((coreGlow * 1.2 + fringeGlow + wash * 0.4), 0.0, 0.4);
                 }
 
-                gl_FragColor = vec4(finalColor, alpha * 0.6);
+                float bottomFade = 1.0 - smoothstep(0.035, 0.25, uv.y);
+                gl_FragColor = vec4(finalColor, alpha * 0.6 * bottomFade);
             }
         `;
 

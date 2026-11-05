@@ -1,4 +1,7 @@
 /* Acceptance criteria: compact first screen and explicit planned pricing. */
+#portal-field{opacity:.45}
+.portal-fallback{width:90vh;height:90vh;left:calc(50% - 45vh);top:auto;bottom:-79vh;opacity:.42}
+@media(max-width:650px){#portal-field{opacity:.38}}
 .hero{padding-top:clamp(22px,5vh,48px)}
 .hero>.eyebrow{margin-bottom:18px}
 .hero h1{margin-bottom:18px}
