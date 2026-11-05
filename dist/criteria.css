@@ -1,0 +1,14 @@
+/* Acceptance criteria: compact first screen and explicit planned pricing. */
+.hero{padding-top:clamp(22px,5vh,48px)}
+.hero>.eyebrow{margin-bottom:18px}
+.hero h1{margin-bottom:18px}
+.hero-description{max-width:620px;margin-bottom:22px;font-size:15px;line-height:1.7}
+.hero>.proof-line{padding-top:16px}
+.hero>.proof-line p{font-size:13px;line-height:1.6}
+.hero>.proof-line strong{display:inline}
+.plan-prices{margin:22px 0}
+.plan-prices>div{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid #a7ccff1c}
+.plan-prices dt{font-size:15px;color:#dce7f6}
+.plan-prices dd{margin:0;white-space:nowrap;font-size:19px;color:#a7d0ff}
+@media(max-width:650px){.hero{padding-top:26px}.hero>.eyebrow{margin-bottom:15px}.hero h1{font-size:38px}.hero-description{font-size:13px;line-height:1.6;max-width:360px}.hero>.proof-line p{font-size:11px}.plan-prices dt{font-size:13px}.plan-prices dd{font-size:16px}}
+@media(max-height:650px){.header{height:70px}.hero{padding-top:18px}.hero>.eyebrow{margin-bottom:12px}.hero h1{font-size:clamp(32px,5vw,54px);margin-bottom:12px}.hero-description{margin-bottom:16px}.hero>.proof-line{padding-top:12px}}
