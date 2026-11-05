@@ -3,6 +3,10 @@
 Основной публичный сайт: https://joyful-taiyaki-e2b7e7.netlify.app/
 Панель публикации: https://app.netlify.com/projects/joyful-taiyaki-e2b7e7/overview
 
+GitHub-репозиторий: https://github.com/developed-by-kirill/plab-landing
+GitHub Pages: https://developed-by-kirill.github.io/plab-landing/
+Публикация GitHub Pages выполняется автоматически из `dist/` после каждого push в ветку `main` через `.github/workflows/pages.yml`.
+
 Актуальная версия оформления сохранена 19 октября 2026 года: чёрный фон, Portal Field с дугой слева, синий акцент и стеклянные кнопки. Галерея содержит пять кадров приложения с тёмной темой и белым акцентом; автопоказ — 2500 мс, переход — 700 мс. Наведение и фокус приостанавливают автопоказ.
 
 Исходная страница и её ресурсы находятся в dist/. Деплой Netlify собирается из build/netlify-direct в родительском проекте. Последний ZIP для публикации: ../build/PLab-netlify-portal.zip. В корне ZIP должен находиться index.html.
