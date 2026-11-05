@@ -63,7 +63,10 @@ window.PLAB_PORTAL_FRAGMENT = `precision mediump float;
                 }
 
                 float bottomFade = 1.0 - smoothstep(0.035, 0.25, uv.y);
-                gl_FragColor = vec4(finalColor, alpha * 0.6 * bottomFade);
+                // WebGL's transparent canvas composites premultiplied RGB.
+                // Fade color with alpha to avoid an opaque-looking horizontal band.
+                float opacity = alpha * 0.6 * bottomFade;
+                gl_FragColor = vec4(finalColor * opacity, opacity);
             }
         `;
 
