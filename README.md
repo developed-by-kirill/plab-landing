@@ -1,5 +1,9 @@
 # Лендинг PLab
 
+## GitHub Pages
+
+Workflow `.github/workflows/pages.yml` публикует папку `dist/` после каждого изменения ветки `main`. Архив приложения хранится в `dist/downloads/`, поэтому кнопка скачивания работает и на GitHub Pages.
+
 Актуальная страница: dist/index.html. Запускайте локальный HTTP-сервер из dist/ для предпросмотра. Все ресурсы локальные, внешние библиотеки не требуются.
 
 - portal-shader.js и portal.js — эффект Portal Field.
